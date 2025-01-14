@@ -26,10 +26,18 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 31
-    namespace "com.application.tyumen_work"
+
+    if (project.android.hasProperty("namespace")) {
+        namespace = "io.vk.login.flutter"
+    }
 
     kotlinOptions {
-        jvmTarget = "20"
+        jvmTarget = "1.8"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
     
     sourceSets {
