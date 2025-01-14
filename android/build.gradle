@@ -29,7 +29,7 @@ android {
     namespace "com.application.tyumen_work"
 
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = "20"
     }
     
     sourceSets {
