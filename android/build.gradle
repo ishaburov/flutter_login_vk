@@ -26,6 +26,7 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 31
+    namespace "com.application.tyumen_work"
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
